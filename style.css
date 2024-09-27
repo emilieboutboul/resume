@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:'Montserrat', sans-serif; 
+    padding: 0; 
+    margin: 0; 
+}
+ul {
+    padding: 0;
+    margin : 0;
+}
+li {
+list-style-type: none;
+}
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+}
+a{
+    text-decoration: none;
+    color:pink;  
+}
+/* ******************* NAVBAR ****************** */
+header nav{
+    overflow:hidden;
+    background-color: beige;
+    position:fixed; 
+    width: 100%;
+    opacity: 0.9;
+    z-index: 1000;
+}
+header li{
+    float:right; 
+    font-size: 1.1em;
+}
+
+header li a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px 16px;
+    font-weight: bold;
+}
+#logo{
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
+    font-weight: bold;
+    float:left; 
+    font-size:1.5em;
+}
+/* ***************** IMAGE PRINCIPALE ************** */
+
+#imagePrincipale{
+    padding-top: 60px;
+    background: url(media/image-principale.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+h1{
+    font-family:'Bebas Neue', 'Times New Roman', Times, serif;
+    text-align: center;
+    color:blueviolet;
+    font-size: 9em;
+    margin-top: 250px;
+    text-shadow: 2px 4px 3px bisque;
+}
+h3{
+    text-transform: uppercase;
+    font-family:'Montserat', sans-serif;
+    text-align: center;
+    color:blueviolet;
+    font-size: 2em;
+    text-shadow: 2px 4px 3px bisque;
+}
+/* ***********PRESENTATION SERVICES************** */
+#presentation{
+    padding: 10px 10px 50px 0px;
+}
+#textIntro{
+    padding: 0% 20%;
+}
+#prestations{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 30px 5px;
+}
+.imagesPrestations h4{
+    font-family:'Bebas Neue', 'Times New Roman', Times, serif;
+    text-align: center;
+    color: pink;
+    font-size: 2.5em;
+    margin: 15px;
+    font-weight: bold;
+}
+.imagesPrestations img{
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px 2px rgba(0,0,1,0.1);
+}
+.imagesPrestations img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.7s ease-in-out;
+}
+/* ***************SKILLS*************** */
+#services{
+    height: 1350px;
+    background-color:#D4B5F7;
+    padding: 1px 5%;
+}
+#services h2{
+    padding-top: 60px;
+}
+#webdesign {
+    background: url(media/webd.jpg);
+}
+#rebranding {
+    background: url(media/brand.jpg);
+}
+#crea {
+    background: url(media/crea.jpg);
+}
+#dev {
+    background: url(media/dev.jpg);
+}
+#services li{
+    margin: 65px 100px 0 100px;
+    height: 226px;
+    width: 55%;
+    max-width: 550px;
+    float: left;
+    box-shadow: 6px 6px 28px -1px rgba(0,0,1,0.1);
+}
+#services p{
+    height: 45px;
+    width: 235px;
+    background-color: beige;
+    float: right;
+    margin: 50px -120px 0 0;
+    font-size: 1.5;
+    text-align:center;
+    padding-top: 20px;
+    box-shadow: 4px 4px 0 1px rgba(0,0,1,0.1);
+    opacity: 0.9;
+    font-family:'Montserat', sans-serif;
+}
+#services #webdesign, #services #crea{
+    float:right;
+}
+#webdesign p, #crea p{
+    float:left;
+    margin-left:-120px;
+    box-shadow: -4px 4px 0 1px rgba(0,0,1,0.1);
+}
+/* ***************FORMULAIRE DE CONTACT********** */
+footer{
+    background-color: beige;
+    color: blueviolet;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
+form{
+    margin:0 auto; 
+    max-width: 900px;
+}
+input, textarea, button{
+    border:none; 
+    width: 55%;
+    padding: 15px 10px; 
+    margin: 1px 0;
+    font-size: 1.5em;
+    font-family:'Montserat', sans-serif;
+    border-radius: 8px;
+}
+textarea{
+    height: 120px;
+}
+button{
+    font-size: 1.5em;
+    background-color: #D4B5F7;
+}
+button:hover{
+    background-color: blueviolet;
+    color: #D4B5F7;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#deuxiemeTrait{
+    height: 1.5px;
+    width: 75%;
+    background-color: blueviolet;
+    margin: 60px auto;
+}
+#copyrightEtIcons{
+    display: flex;
+    margin-bottom: 20px;
+    padding: 0 10%;
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: pink;
+}
+#icons{
+    width:50%; 
+    text-align: right;
+}
+.fa{
+    display:inline-block;
+    padding :0 15px;
+    font-size: 1.3em;
+}
+.fa:hover{
+    transform:scale(1.5);
+    transition: 0.1s;
+}
+/* ******************Page & Image Avis***************** */
+#imageAvis{
+    padding-top: 100px;
+    background:url(media/imageAvis.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+#textAvis p{
+    font-family: 'Montserat' sans-serif;
+    font-size: 1.5em;
+    margin: 0 20%;
+    text-align: left;
+}
+#textAvis h2{
+    font-family:'Bebas Neue', 'Times New Roman', Times, serif;
+    font-size: 3.9em;
+    color: #29A66C;
+}
+
+
+/* *************slider************* */
+
+.slider-1{
+    max-width: 600px;
+    margin: 100px auto;
+    overflow: hidden;
+    border : 2em double #29A66C;
+    background-color: #F2ACD3;
+    border-radius: 2%;
+}
+
+.slider-1 .slider{
+    display:flex;
+    animation: slider-1 13s infinite ease-in-out;
+}
+
+.slider-1 p{
+    background: #F2ACD3;
+    flex-shrink: 0;
+    padding: 72px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.9em;
+    color: white;
+    font-weight: bold ;
+}
+
+@keyframes slider-1{
+    0%,
+    20%{
+        transform: translateX(0);
+    }
+    25%,
+    45%{
+        transform: translateX(-100%);
+    }
+    50%,
+    70%{
+        transform: translateX(-200%);
+    }
+    75%,
+    95%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-400%);
+    }
+}
+
+/* ****************Page about me********************** */
+
+#aboutme{
+    background-color: #FCEAE7;
+    padding: 1px 0%;
+}
+
+#imageAboutme{
+    padding-top: 100px;
+    background: url(media/imageAboutme.jpg) no-repeat fixed 50% 50%;
+    background-size: cover;
+    height: 799px;
+}
+#aboutme img{
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 3%;
+}
+#aboutme p{
+    font-family: 'Montserat' sans-serif;
+    font-size: 1.5em;
+    margin: 0 5%;
+}
+
+#aboutme h2{
+    font-family: 'Bebas Neue', 'Times New Roman', Times, serif;
+    font-size: 3.9em;
+    color: #302EDA;
+    text-align: left;
+}
+#imageAboutme h1{
+    color: #F2ACD3;
+}
+#imageAboutme h3{
+    color: #F2ACD3;
+}
+
+#competences img{
+    width: 425px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px 2px rgba(0,0,1,0.1);
+}
+#competences img:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+    transition: 0.7s ease-in-out;
+}
+#competences{
+    background-color: #FCEAE7;
+    height: 1150px;
+    padding: 10px 0 90px 0;
+}
+#cv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 30px 10px;  
+}
+#cv img{
+    margin: 20px 0%;
+}
